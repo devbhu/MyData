@@ -1,0 +1,47 @@
+package dynamicprogramming;
+
+public class LongestIncreasingSubSequence {
+    
+	
+	
+	// Bottom up dynamic approach
+	
+	static int lis(int arr[],int n)
+    {
+          int lis[] = new int[n];
+        //  int temp[] = new int[n];
+          int i,j,max = 0;
+ 
+          /* Initialize LIS values for all indexes */
+           for ( i = 0; i < n; i++ ){
+              lis[i] = 1;
+           }
+ 
+           /* Compute optimized LIS values in bottom up manner */
+           for ( i = 1; i < n; i++ ){
+              for ( j = 0; j < i; j++ )
+            	  if ( arr[i] > arr[j]){
+                      lis[i] = Math.max(lis[i],lis[j] + 1);
+            	  }
+           }
+          /* System.out.println("LIS are :");
+           for ( i = 0 ; i < n; i++ )
+        	   System.out.print(temp[i]+ "  ");*/
+           
+           /* Pick maximum of all LIS values */
+           for ( i = 0; i < n; i++ )
+              if ( max < lis[i] )
+                 max = lis[i];
+ 
+            return max;
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        int arr[] = { 10, 22, 9, 33, 21, 50, 41, 60};
+            int n = arr.length;
+            System.out.println("Length of lis is " + lis( arr, n ) );
+          //  System.out.println("Length of lis is " + LIS( arr, n ) );
+	}
+
+}
