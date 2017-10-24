@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.test.onetomany" auto-import="false">
+<class name="Employee" table="EMPLOYEE_TABLE">
+
+<id name="employeeId" column="EMPLOYEE_ID">
+
+<generator class="increment"/>
+
+</id>
+
+<property name="employeeName" column="EMPLOYEE_NAME"/>
+
+<set  name="addresses" access="property" cascade="all" >
+
+<key foreign-key="EMP" not-null="true"/>
+
+<one-to-many class="Address"  />
+
+</set>
+
+</class>
+
+</hibernate-mapping>        

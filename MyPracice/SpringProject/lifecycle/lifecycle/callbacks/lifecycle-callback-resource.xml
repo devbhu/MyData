@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="ll" class="lifecycle.callbacks.TestClass" scope="singleton"
+		init-method="initialization" destroy-method="clear">
+		<property name="value" value="20" />
+	</bean>
+
+	<bean class="lifecycle.callbacks.TestBeanFactoryPostProcessor" />
+
+	<bean class="lifecycle.callbacks.TestBeanPostProcessor" />
+
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+
+	<!-- Container lifecycle beans with LifeCycle interface registration start -->
+
+
+	<!-- <bean class="lifecycle.callbacks.TestContainerLifeCycle"/> Container 
+		lifecycle beans with LifeCycle interface registration end Smart Life cycle 
+		beans registration start <bean class="lifecycle.callbacks.PhaseLifeCycle"/> 
+		Smart life cycle beans registration end -->
+</beans>      

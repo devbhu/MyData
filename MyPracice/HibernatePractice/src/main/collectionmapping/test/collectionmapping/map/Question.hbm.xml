@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="test.collectionmapping.map" auto-import="true">
+
+<import class="test.collectionmapping.map.Question" rename="QuestionClass"/>
+
+<class name="Question" >
+
+<id name="questionId">
+<generator class="native"/>
+
+</id>
+<version name="questionVersion" column="QUESTION_VERSION" type="integer"/>
+
+<property name="question" column="QUESTION"/>
+
+
+
+
+<map name="userAnswers" access="property" table="USER_ANSWER" lazy="true" cascade="none" optimistic-lock="false" mutable="true">
+
+<key column="USER_ANSWER_ID" foreign-key="UserAnswer_FK" not-null="true" />
+
+<composite-map-key class="UserName">
+
+<key-property name="userName" column="USRNAME"></key-property>
+
+</composite-map-key>
+
+<composite-element class="Answer">
+<property name="answer" column="ANS" type="string"/>
+
+</composite-element>
+<!-- <element column="ANSWER" type="string"></element> -->
+
+</map>
+
+
+
+</class>
+
+
+</hibernate-mapping>        

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="test.onetoone.bidirectional">
+
+<class name="Person" dynamic-insert="true" dynamic-update="true" table="PERSON_TABLE">
+
+
+<id name="personID" type="integer" access="property" column="PERSON_ID">
+
+<generator class="increment"/>
+
+</id>
+
+<property name="personName" type="string" column="PERSON_NAME"/>
+
+<!-- Trying to make Person independent table no foreign key constraints . constrained=false -->
+<one-to-one name="address" access="property" class="Address" cascade="save-update" constrained="false" />
+
+
+
+</class>
+
+
+
+</hibernate-mapping>        
+        

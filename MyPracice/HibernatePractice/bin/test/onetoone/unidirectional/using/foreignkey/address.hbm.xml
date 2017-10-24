@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+<hibernate-mapping package="test.onetoone.unidirectional.using.foreignkey">
+
+<class name="Address" dynamic-insert="true" dynamic-update="true" table="PERSON_ADDRESS">
+
+
+<id name="addressID" type="integer" access="property" >
+
+</id>
+
+<property name="city" type="string" column="PERSON_CITY"/>
+
+<property name="state" type="string" column="PERSON_STATE"/>
+
+<property name="country" type="string" column="PERSON_COUNTRY"/>
+
+
+
+
+
+
+</class>
+
+</hibernate-mapping>
+        

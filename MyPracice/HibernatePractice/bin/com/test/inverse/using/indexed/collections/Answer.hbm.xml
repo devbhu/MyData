@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.inverse.using.indexed.collections">
+
+<class name="Answer" table="ANSWER_TABLE">
+
+<id name="answerID" column="ANSWER_ID">
+<generator class="native"></generator>
+</id>
+
+<property name="answer"/>
+ <property name="userName" type="string" access="property" column="USER_NAME"/>  
+
+<many-to-one name="question" column="QUES_ID" class="Question" access="property" cascade="all" foreign-key="question_fk" insert="true" update="true"/>
+
+</class>
+
+
+</hibernate-mapping>

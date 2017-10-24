@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.mapping.onetoone" >
+
+<class name="UserDetailss" table="USER_DETAILS"  dynamic-insert="true" dynamic-update="true" > 
+
+<id name="userID" column="user_id" type="integer" access="field">
+
+<generator class="increment">
+</generator>
+
+</id>
+
+
+<!-- <natural-id>
+
+<property name="voterId" column="VOTER_ID" access="property" type="integer"/>
+
+</natural-id> -->
+
+<component name="userAddress" class="UserAddress" access="property" insert="true" update="true">
+<!-- <parent name="userDetails"/> -->
+<property name="userCity" column="city"  type="string" not-null="true" access="field"/>
+<property name="userStreet" column="street"  type="string" not-null="true" access="field"/>
+<property name="userZipCode" column="zipcode"  type="long" not-null="true" access="field"/>
+<property name="userAddressId" column="user_address_id"  type="long" not-null="false" access="field"/>
+
+</component>
+<many-to-one name=""></many-to-one>
+
+<property name="userName" column="user_name" type="string" not-null="true" access="field"/>
+
+
+
+<!-- <one-to-one name="address" class="Addresses" access="property" cascade="delete" constrained="true" ></one-to-one>
+ -->
+<!-- <one-to-one name="address" lazy="proxy" class="Addresses" foreign-key="user_address_id" access="property" cascade="save-update" constrained="true" ></one-to-one>
+ -->
+</class>
+
+</hibernate-mapping> 

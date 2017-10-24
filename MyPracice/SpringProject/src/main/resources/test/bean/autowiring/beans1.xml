@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd"  default-init-method="init1" default-destroy-method="defClean">
+
+<import resource="classpath:test/pso/resource/container/custom.xml"/>
+
+<bean id="test1" class="com.test.pojos.TestBeanPojo"  autowire="byType">
+  <replaced-method name="fun" replacer="testReplacer"/>
+  <lookup-method name="createProtoInstance" bean="pojo1"/>
+
+</bean>
+
+
+<bean id="pojo1" class="com.test.pojos.TestBeanPojo1" scope="prototype">
+
+</bean>
+
+<bean id="testReplacer" class="com.test.pojos.TestMethodReplacer"/>
+
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.inverse.valuetyped">
+
+<class name="Author" >
+
+
+<id name="authorId" type="integer">
+<generator class="native"></generator>
+</id>
+
+<property name="authorName"/>
+
+<set name="books" table="BOOK_TABLE" >
+
+<key column="AUTHOR_ID"> </key>
+
+<composite-element class="Book">
+
+<property name="bookName" type="string"/>
+
+</composite-element>
+
+</set>
+
+</class>
+
+
+
+</hibernate-mapping>        

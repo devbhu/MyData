@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.test.hibernate.mapping.models">
+
+<class name="Region" table="REGION_TABLE">
+
+<id column="REGION_ID" name="regionId" type="integer" access="property">
+
+<generator class="increment"></generator>
+
+</id>
+
+<property name="regionName" column="REGION_NAME" type="string" />
+<property name="tcSerialNo" column="TC_SERIAL_NO" access="property" type="integer" unique="true"></property>
+
+<!-- <properties name="multipleUniqueProps" unique="true" >
+
+<property name="tcSerialNo" column="TC_SERIAL_NO"/>
+<property name="regionId" column="REGION_ID"/>
+
+</properties>-->
+
+</class> 
+
+
+</hibernate-mapping>        

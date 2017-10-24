@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.test.mapping.onetoone">
+
+	<class name="UserAddress" table="ADDRESS" dynamic-insert="true" dynamic-update="true">
+
+		<id access="property" column="address_id" name="addressId">
+
+			<generator class="foreign">
+			<param name="property">userID</param>
+			</generator>
+		</id>
+
+
+	<!-- 	<property name="residentCity" column="resident_city"></property>
+		<property name="residentState" column="resident_state"></property>
+		<property name="residentCountry" column="resident_country"></property>
+		<property name="addressUserId" column="address_user_id"></property> -->
+		<!-- 
+ 		<one-to-one  name="userDetails" lazy="proxy" class="UserDetailss"  property-ref="userAddressId" access="property" cascade="save-update" constrained="false" ></one-to-one>
+		 -->
+
+
+	</class>
+
+
+</hibernate-mapping>

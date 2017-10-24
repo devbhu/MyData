@@ -1,0 +1,111 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd" default-lazy-init="true" default-init-method="init1" default-destroy-method="defClean">
+
+
+<bean id="demoTest" class="com.test.pojos.TestBeanPojo">
+<property name="pojo1" ref="demoTest1"/>
+
+
+<property name="values" >
+
+  <list>
+  
+  <value>apple</value>
+  <value>mango</value>
+  <value>guava</value>
+  <value>grapes</value>
+  </list>
+
+</property>
+
+<property name="map">
+
+<map>
+<entry>
+  <key><value>321</value></key>
+   <list>
+    <value>abc</value>
+    <value>def</value>
+    <value>bca</value>
+   </list>
+</entry>
+<entry>
+
+  <key><value>456</value></key>
+  <list>
+  
+  <value>safs</value>
+  <value>dgdga</value>
+  <value>fasga</value>
+  </list> 
+   
+  
+</entry>
+</map>
+
+
+</property>
+
+
+<property name="set">
+
+ <set>
+ 
+ <value>abc</value>
+ <value>bca</value>
+ <value>cab</value>
+ </set>
+
+
+</property>
+
+<property name="arrays">
+<array>
+<value>array1</value>
+<value>array2</value>
+<value>array3</value>
+</array>
+
+</property>
+
+</bean>
+
+
+<bean id="demoTestTest" class="com.test.pojos.TestBeanPojo1" depends-on="demoTest2,demoTest3" init-method="create" destroy-method="destroy" >
+
+
+<property name="set">
+
+ <set  merge="true">
+ 
+ <value>abc1</value>
+
+ </set>
+ </property>
+<property name="props">
+<props>
+
+<prop key="abc" >hf</prop>
+
+<prop key="bca">fwef</prop>
+</props>
+
+</property>
+
+
+
+</bean>
+
+<bean id="demoTest1" class="com.test.pojos.TestBeanPojo1" >
+<property name="pojo2" ref="demoTest2"/>
+</bean>
+<bean id="demoTest2" class="com.test.pojos.TestBeanPojo2" init-method="create" destroy-method="destroy" lazy-init="false" scope="prototype">
+
+</bean>
+<bean id="demoTest3" class="com.test.pojos.TestBeanPojo3" init-method="create" destroy-method="destroy" scope="prototype"/>
+
+ 
+</beans> 
+

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+
+<hibernate-mapping  schema="HR" default-access="property" auto-import="false" package="com.basic.compositeid.mapping">
+
+
+    <class name="com.basic.compositeid.mapping.Employees" schema="HR"> 
+       
+       <composite-id  class="EmployeeCompositeId" mapped="true">
+       
+       <key-property name="id" column="EMPLOYEE_ID" access="property"></key-property>
+       
+       <key-property name="employeeFirstName" column="FIRST_NAME" access="property"></key-property>
+       
+      </composite-id>
+       
+       
+<!--    <property name="employeeFirstName"  insert="true" update="true" column="FIRST_NAME"/> -->
+      <property name="employeeLastName"  insert="true" update="true" column="LAST_NAME"/>
+   <property name="employeeEmail" insert="true" update="true" column="EMAIL"/>
+    <property name="departmentID" insert="true" update="true" column="DEPARTMENT_ID"></property>
+     <property name="salary" insert="true" update="true" column="SALARY"/>
+     <property name="hireDate" insert="true" update="true" column="HIRE_DATE"></property>
+     <property name="jobID" insert="true" update="true" column="JOB_ID" lazy="true" />
+
+      
+     </class>
+</hibernate-mapping>

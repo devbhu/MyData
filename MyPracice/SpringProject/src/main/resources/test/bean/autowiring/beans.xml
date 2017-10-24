@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-2.5.xsd"  default-init-method="init1" default-destroy-method="defClean">
+
+
+
+<!-- <bean id="auto1" class="com.test.autowiring.beans.Customer" autowire="byType" /> -->
+<!-- 
+<bean id="inte4r" class="com.test.autowiring.beans.Person1" />
+ 
+ <bean id="autoDetectTest" class="com.test.autowiring.beans.AutoDetectTest" autowire="autodetect"/>
+ <bean id="inter" class="com.test.autowiring.beans.Person"  /> -->
+
+<!-- <bean id="inte4r" class="com.test.autowiring.beans.Person1" />  -->
+ <bean id="dependencyCheck" class="com.test.autowiring.beans.Customer"  scope="prototype" dependency-check="none" abstract="true">
+ 
+
+ 
+ 
+ </bean>
+ 
+ <bean id="inte4r" class="com.test.autowiring.beans.Person1" /> 
+ 
+  <bean id="inte4r1" class="com.test.autowiring.beans.Person1" /> 
+   <bean id="inte4r2" class="com.test.autowiring.beans.Person1" /> 
+ 
+</beans> 
+

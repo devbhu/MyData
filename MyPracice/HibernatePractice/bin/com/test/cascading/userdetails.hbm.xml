@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.cascading" auto-import="false">
+
+<class name="UsrDetails" table="USER_DETAILS" dynamic-insert="true" dynamic-update="true" > 
+
+<id name="userID" column="user_id" type="integer" access="field">
+
+<generator class="assigned"/>
+
+</id>
+
+<property name="userName" column="user_name" type="string" not-null="true" />
+
+
+<property name="userCity" column="city"  type="string" not-null="true" />
+<property name="userStreet" column="street"  type="string" not-null="true" />
+<property name="userZipCode" column="zipcode"  type="long" not-null="true"/>
+<one-to-one name="address" class="com.test.cascading.Address"  foreign-key="address_user_id" cascade="all"/>
+
+</class>
+
+
+
+
+</hibernate-mapping>        

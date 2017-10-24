@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.test.workingwithobjects" auto-import="true" >
+
+<class name="Author" table="AUTHOR_TABLE" dynamic-update="true"  lazy="true"  >
+
+<id name="authorId" type="integer" access="property">
+<generator class="assigned"/>
+</id>
+
+<version name="authorVersion" access="field" column="version" type="integer"/>
+
+<property name="authorName" type="string"  not-null="false" />
+
+<property name="authorRegistration" type="string"/>
+
+  <set name="books" inverse="false" cascade="all" fetch="subselect">
+
+
+<key column="AUTHORID"  />
+
+<one-to-many class="Book" />
+
+</set>  
+
+
+
+
+</class>
+
+</hibernate-mapping>        
+        

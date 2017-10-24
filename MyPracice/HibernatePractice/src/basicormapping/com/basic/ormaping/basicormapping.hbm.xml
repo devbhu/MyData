@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+
+<hibernate-mapping  schema="HR" default-access="property" package="com.test.basicormapping.model">
+
+    <class name="com.test.basicormapping.model.Employees" schema="HR" dynamic-update="true"> 
+        <id name="id" column="EMPLOYEE_ID" unsaved-value="302">
+              <generator class="sequence">
+            <param name="sequence">EMPLOYEES_SEQ</param> 
+            </generator>  
+            
+        </id>
+        
+    <version name="versionId"   column="EMP_VERSION" access="property"  />   
+   <property name="employeeFirstName"  lazy="true" insert="true" update="true" column="FIRST_NAME" optimistic-lock="false"/>
+      <property name="employeeLastName"  insert="true" update="true" column="LAST_NAME"/>
+   <property name="employeeEmail" insert="true" update="true" column="EMAIL"/>
+    <property name="departmentID" insert="true" update="true" column="DEPARTMENT_ID"></property>
+     <property name="salary" type="integer"  insert="true" update="true" column="SALARY" not-null="true"/>
+     <property name="hireDate" insert="true" update="true" column="HIRE_DATE"></property>
+     <property name="jobID" insert="true" update="true" column="JOB_ID" lazy="true" />
+      <property name="empType" lazy="false" insert="true" update="true" column="EMP_TYPE" type="true_false"/>
+      
+    <property name="sumSalary" lazy="false" type="long" formula="(select sum(salary)  from employees emp  where emp.department_id=DEPARTMENT_ID group by emp.department_id)"></property>
+      
+      <property name="lastUpdatedDttm" column="LAST_UPDATED_DTTM" type="timestamp" generated="always"/>
+      
+     </class>
+</hibernate-mapping>

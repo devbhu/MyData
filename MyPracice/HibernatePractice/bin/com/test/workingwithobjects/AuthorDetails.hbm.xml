@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.test.workingwithobjects" auto-import="true">
+
+<class name="AuthorDetails" table="AUTHOR_DETAILS_TABLE" dynamic-update="true"  lazy="true">
+
+<id name="authorDetailsId" type="integer" access="property">
+<generator class="foreign">
+<param name="property">author</param>
+</generator>
+</id>
+
+
+<property name="authorCity" type="string"  not-null="false" />
+
+
+<one-to-one name="author" access="property" class="Author" lazy="proxy" constrained="true" cascade="save-update" foreign-key="author_details_author_fk"/>
+
+</class>
+
+</hibernate-mapping>   

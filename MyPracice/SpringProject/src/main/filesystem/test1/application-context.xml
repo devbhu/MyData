@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+<bean id="/demoTest12.html"   class="com.test.pojos.TestBeanPojo" />
+
+<alias name="/demoTest12.xhtml" alias="demo123"/> 
+
+<bean name="demoTest123"  class="com.test.pojos.TestBeanPojo" />  -->
+
+ <bean class="com.test.beanpostprocessor.TestBeanPostProcessor" /> 
+
+
+
+
+
+
+
+
+
+
+ 
+<!-- <bean id="demoTest1" class="com.test.pojos.TestBeanPojo1" />
+<bean id="demoTest2" class="com.test.pojos.TestBeanPojo2" factory-method="createInstance" factory-bean="demoTest1"/>
+ -->
+
+<!-- <bean id="demoTestClassPathBean" class="org.springframework.context.support.ClassPathXmlApplicationContext">     
+      
+      <constructor-arg value="test/resource/beans1.xml"/>
+      </bean> -->
+
+
+
+
+</beans>      

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.test.usingjoin" >
+
+	<class name="Person" dynamic-insert="true" dynamic-update="true">
+
+       
+       
+		<id name="personId" type="integer">
+
+			<generator class="increment" />
+		</id>
+		
+      <version name="personVersion" column="PERSION_VERSION" type="integer" />
+      
+         
+
+		<property name="personName" type="string" />
+
+		<join table="Address" inverse="false" optional="false">
+
+			<key column="PERSON_ID" />
+
+         <property name="personCity" column="PERSON_CITY"/>
+         <property name="personCountry" column="PERSON_COUNTRY"></property>
+         <property name="personState" column="PERSON_STATE"/>
+		</join>
+  
+
+	
+	</class>
+   
+   <sql-query name="SQL_GET_ALL_EMPLOYEE">
+		<![CDATA[select employee_id, first_name, last_name from Employees]]>
+	</sql-query>
+
+</hibernate-mapping>        

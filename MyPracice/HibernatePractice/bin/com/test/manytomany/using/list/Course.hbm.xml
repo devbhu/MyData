@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.test.manytomany.using.list">
+
+<class name="Course" table="COURSE_TABLE">
+
+<id name="courseId" type="integer">
+
+<generator class="native"/>
+
+</id>
+
+<property name="courseName" column="COURSE_NAME" type="string"/>
+
+<list name="students" table="STUDENT_COURSE_DETAIL" access="property" cascade="all" >
+
+<key column="COURSE_STUDENT_ID" />
+
+<list-index base="0"/>
+
+<many-to-many class="Student" column="STU_ID" ></many-to-many>
+
+</list>
+
+
+</class>
+
+
+</hibernate-mapping>        
+        

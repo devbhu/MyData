@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.onetomany.using.map.bidirectional">
+
+
+<class name="Author" table="AUTHOR_TABLE">
+
+
+<id name="authorId">
+<generator class="native"/>
+</id>
+
+
+<property name="authorName"/>
+
+<map name="books"  access="property" cascade="save-update">
+
+<key column="BOOK_AUTHOR_ID" foreign-key="book_author_fk" />
+<map-key column="BOOK_VERSION" type="integer"/>
+<one-to-many class="Book"/>
+
+</map>
+
+
+</class>
+
+
+
+
+</hibernate-mapping>        

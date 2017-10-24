@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+         
+
+
+<bean id="vehi" class ="test.factory.bean.Bus">
+<!-- <qualifier type="test.custom.qualifier.Gender">
+<attribute key="type" value="FEMALE"/>
+<attribute key="value" value="fee"/>
+</qualifier> -->
+<meta key="type" value="FEMALE"/>
+<meta key="value" value="fe"/>
+</bean>
+
+<bean id="car1" class ="test.factory.bean.Car">
+<qualifier value="bus"/>
+</bean>
+
+
+
+</beans>      

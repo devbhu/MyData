@@ -1,0 +1,1412 @@
+12:55:44,327  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:55:44,333  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:55:44,337  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:55:44,338  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:55:44,338  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:55:44,355  INFO Configuration:2015 - HHH000043: Configuring from resource: com/dynamicmodel/config/hibernate.cfg.xml
+12:55:44,355  INFO Configuration:2034 - HHH000040: Configuration resource: com/dynamicmodel/config/hibernate.cfg.xml
+12:55:44,400  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/dynamicmodel/config/employee.hbm.xml
+12:55:44,438  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:55:44,473  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:55:44,474  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:55:44,532  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:55:44,532  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:55:44,533  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:55:44,533  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=HR, password=****}
+12:55:44,767  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:55:44,814  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:55:44,817  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:55:44,951 DEBUG SQL:104 - 
+    select
+        EMPLOYEES_SEQ.nextval 
+    from
+        dual
+12:55:44,996 DEBUG SQL:104 - 
+    insert 
+    into
+        EMPLOYEES
+        (FIRST_NAME, LAST_NAME, EMAIL, DEPARTMENT_ID, SALARY, HIRE_DATE, JOB_ID, EMPLOYEE_ID) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+12:55:45,009  INFO DriverManagerConnectionProviderImpl:160 - HHH000030: Cleaning up connection pool [jdbc:oracle:thin:@localhost:1521:xe]
+11:55:12,568  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+11:55:12,578  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+11:55:12,591  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+11:55:12,592  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+11:55:12,592  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+11:55:12,622  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/basic-or-mapping.cfg.xml
+11:55:12,623  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/basic-or-mapping.cfg.xml
+11:55:12,703  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+11:58:48,385  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+11:58:48,394  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+11:58:48,401  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+11:58:48,402  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+11:58:48,402  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+11:58:48,425  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/basic-or-mapping.cfg.xml
+11:58:48,425  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/basic-or-mapping.cfg.xml
+11:58:48,485  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:03:36,707  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:03:36,714  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:03:36,721  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:03:36,722  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:03:36,723  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:03:36,748  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:03:36,748  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:03:36,800  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:04:04,757  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:04:04,764  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:04:04,770  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:04:04,771  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:04:04,771  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:04:04,790  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:04:04,791  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:04:04,844  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/test/persist/Employee.hbm.xml
+12:04:04,891  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/dynamicmodel/config/Employee.hbm.xml
+12:04:04,914  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:04:04,967  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:04:04,969  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:04:05,037  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:04:05,037  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:04:05,038  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:04:05,038  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=hr, password=****}
+12:04:05,292  WARN JdbcServicesImpl:169 - HHH000342: Could not obtain connection to query metadata : ORA-01017: invalid username/password; logon denied
+
+12:04:05,309  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:04:05,324  INFO LobCreatorBuilder:85 - HHH000422: Disabling contextual LOB creation as connection was null
+12:04:05,401  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:04:05,407  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:05:45,782  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:05:45,789  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:05:45,794  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:05:45,795  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:05:45,795  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:05:45,814  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:05:45,814  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:05:45,864  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:06:11,618  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:06:11,628  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:06:11,635  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:06:11,636  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:06:11,636  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:06:11,660  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:06:11,661  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:06:11,714  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:06:31,079  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:06:31,086  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:06:31,092  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:06:31,092  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:06:31,092  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:06:31,111  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:06:31,112  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:06:31,161  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:06:31,197  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:06:31,199  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:06:31,260  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:06:31,260  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:06:31,261  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:06:31,261  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=hr, password=****}
+12:06:31,466  WARN JdbcServicesImpl:169 - HHH000342: Could not obtain connection to query metadata : ORA-01017: invalid username/password; logon denied
+
+12:06:31,474  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:06:31,483  INFO LobCreatorBuilder:85 - HHH000422: Disabling contextual LOB creation as connection was null
+12:06:31,513  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:06:31,517  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:07:58,341  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:07:58,348  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:07:58,354  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:07:58,355  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:07:58,355  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:07:58,376  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:07:58,376  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:07:58,428  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:07:58,472  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:07:58,515  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:07:58,517  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:07:58,599  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:07:58,600  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:07:58,600  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:07:58,600  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:07:58,914  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:09:23,426  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:09:23,435  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:09:23,441  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:09:23,442  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:09:23,442  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:09:23,464  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:09:23,464  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:09:23,520  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:09:23,564  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:09:23,602  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:09:23,604  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:09:23,677  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:09:23,678  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:09:23,678  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:09:23,678  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:09:23,952  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:09:24,010  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:09:24,014  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:09:24,290 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:10:34,608  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:10:34,615  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:10:34,621  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:10:34,621  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:10:34,621  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:10:34,640  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:10:34,641  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:10:34,691  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:10:34,734  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:10:34,771  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:10:34,772  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:10:34,834  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:10:34,834  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:10:34,834  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:10:34,834  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=HR, password=****}
+12:10:35,096  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:10:35,153  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:10:35,157  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:10:35,429 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:10:35,468  WARN SqlExceptionHelper:144 - SQL Error: 942, SQLState: 42000
+12:10:35,468 ERROR SqlExceptionHelper:146 - ORA-00942: table or view does not exist
+
+12:10:55,207  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:10:55,216  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:10:55,223  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:10:55,224  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:10:55,224  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:10:55,246  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:10:55,246  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:10:55,306  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:10:55,355  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:10:55,397  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:10:55,399  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:10:55,476  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:10:55,476  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:10:55,477  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:10:55,477  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:10:55,786  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:10:55,862  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:10:55,868  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:10:56,142 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:11:20,529  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:11:20,538  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:11:20,546  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:11:20,547  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:11:20,547  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:11:20,572  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:11:20,572  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:11:20,625  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:11:20,670  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:11:20,708  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:11:20,711  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:11:20,790  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:11:20,790  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:11:20,790  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:11:20,791  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:11:21,069  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:11:21,126  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:11:21,130  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:11:21,388 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        app_role_membership basicormap0_
+12:11:21,427  WARN SqlExceptionHelper:144 - SQL Error: 942, SQLState: 42000
+12:11:21,427 ERROR SqlExceptionHelper:146 - ORA-00942: table or view does not exist
+
+12:12:23,915  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:12:23,922  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:12:23,928  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:12:23,929  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:12:23,929  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:12:23,950  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:12:23,950  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:12:24,002  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:12:24,048  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:12:24,091  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:12:24,093  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:12:24,169  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:12:24,169  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:12:24,170  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:12:24,170  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:12:24,471  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:12:24,541  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:12:24,545  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:12:24,800 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:12:46,387  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:12:46,395  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:12:46,401  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:12:46,401  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:12:46,402  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:12:46,421  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:12:46,421  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:12:46,474  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:12:46,518  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:12:46,557  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:12:46,559  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:12:46,633  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:12:46,633  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:12:46,633  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:12:46,634  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:12:46,923  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:12:46,988  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:12:46,992  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:12:47,282 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:14:39,970  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:14:39,975  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:14:39,979  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:14:39,980  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:14:39,980  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:14:39,997  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:14:39,997  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:14:40,038  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:14:40,075  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:14:40,107  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:14:40,108  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:14:40,157  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:14:40,157  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:14:40,157  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:14:40,157  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:14:40,361  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:14:40,410  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:14:40,414  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:14:40,613 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:15:08,000  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:15:08,006  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:15:08,010  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:15:08,011  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:15:08,011  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:15:08,027  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:15:08,027  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:15:08,068  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:15:08,108  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:15:08,140  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:15:08,141  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:15:08,191  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:15:08,191  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:15:08,191  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:15:08,191  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:15:08,393  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:15:32,724  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:15:32,730  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:15:32,734  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:15:32,735  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:15:32,735  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:15:32,752  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:15:32,752  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:15:32,793  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:15:32,829  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:15:32,860  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:15:32,862  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:15:32,911  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:15:32,911  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:15:32,911  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:15:32,911  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:15:33,113  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:15:51,354  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:15:51,360  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:15:51,364  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:15:51,365  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:15:51,365  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:15:51,381  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:15:51,381  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:15:51,423  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:15:51,459  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:15:51,492  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:15:51,494  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:15:51,544  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:15:51,544  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:15:51,544  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:15:51,544  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:15:51,748  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:16:00,496  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:16:00,502  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:16:00,506  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:16:00,507  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:16:00,507  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:16:00,523  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:16:00,523  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:16:00,565  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:16:00,601  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:16:00,633  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:16:00,634  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:16:00,683  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:16:00,683  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:16:00,683  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:16:00,683  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:16:00,888  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:16:00,936  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:16:00,939  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:16:01,146 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:17:58,607  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:17:58,613  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:17:58,617  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:17:58,618  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:17:58,618  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:17:58,634  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:17:58,634  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:17:58,675  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:17:58,711  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:17:58,742  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:17:58,744  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:17:58,793  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:17:58,793  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:17:58,793  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:17:58,793  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:17:58,998  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:17:59,047  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:17:59,050  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:17:59,250 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        cc.XDB.app_role_membership basicormap0_
+12:17:59,280  WARN SqlExceptionHelper:144 - SQL Error: 933, SQLState: 42000
+12:17:59,280 ERROR SqlExceptionHelper:146 - ORA-00933: SQL command not properly ended
+
+12:18:26,674  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:18:26,680  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:18:26,684  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:18:26,685  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:18:26,685  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:18:26,701  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:18:26,701  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:18:26,742  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:18:26,777  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:18:26,808  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:18:26,809  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:18:26,858  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:18:26,858  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:18:26,858  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:18:26,858  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:18:27,060  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:18:27,107  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:18:27,111  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:18:27,309 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XE.XDB.app_role_membership basicormap0_
+12:18:27,338  WARN SqlExceptionHelper:144 - SQL Error: 933, SQLState: 42000
+12:18:27,339 ERROR SqlExceptionHelper:146 - ORA-00933: SQL command not properly ended
+
+12:18:53,107  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:18:53,113  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:18:53,117  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:18:53,118  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:18:53,118  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:18:53,134  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:18:53,134  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:18:53,175  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:18:53,211  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:18:53,242  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:18:53,243  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:18:53,292  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:18:53,293  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:18:53,293  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:18:53,293  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:18:53,497  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:18:53,545  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:18:53,548  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:18:53,748 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:19:23,873  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:19:23,879  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:19:23,883  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:19:23,884  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:19:23,884  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:19:23,901  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:19:23,901  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:19:23,943  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:19:23,981  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:19:24,013  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:19:24,014  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:19:24,065  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:19:24,066  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:19:24,066  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:19:24,066  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:19:24,269  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:19:24,318  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:19:24,321  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:19:24,521 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XE.XDB.app_role_membership basicormap0_
+12:19:24,551  WARN SqlExceptionHelper:144 - SQL Error: 933, SQLState: 42000
+12:19:24,551 ERROR SqlExceptionHelper:146 - ORA-00933: SQL command not properly ended
+
+12:19:56,714  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:19:56,720  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:19:56,724  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:19:56,725  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:19:56,725  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:19:56,741  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:19:56,742  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:19:56,782  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:19:56,819  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:19:56,849  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:19:56,851  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:19:56,900  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:19:56,900  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:19:56,901  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521]
+12:19:56,901  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:19:57,107  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:19:57,156  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:19:57,159  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:19:57,357 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XE.XDB.app_role_membership basicormap0_
+12:19:57,387  WARN SqlExceptionHelper:144 - SQL Error: 933, SQLState: 42000
+12:19:57,387 ERROR SqlExceptionHelper:146 - ORA-00933: SQL command not properly ended
+
+12:30:40,849  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:30:40,855  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:30:40,859  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:30:40,859  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:30:40,859  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:30:40,875  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:30:40,875  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:30:40,917  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:30:40,953  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:30:40,984  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:30:40,985  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:30:41,033  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:30:41,033  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:30:41,034  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521]
+12:30:41,034  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:30:41,241  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:30:41,289  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:30:41,293  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:30:41,493 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        xe.XDB.app_role_membership basicormap0_
+12:30:41,523  WARN SqlExceptionHelper:144 - SQL Error: 933, SQLState: 42000
+12:30:41,523 ERROR SqlExceptionHelper:146 - ORA-00933: SQL command not properly ended
+
+12:34:08,442  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:34:08,448  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:34:08,452  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:34:08,452  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:34:08,452  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:34:08,470  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:34:08,470  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:34:08,516  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:34:08,553  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:34:08,586  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:34:08,587  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:34:08,638  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:34:08,639  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:34:08,639  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521]
+12:34:08,639  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:34:08,850  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:34:24,238  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:34:24,244  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:34:24,248  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:34:24,249  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:34:24,249  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:34:24,265  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:34:24,265  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:34:24,307  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:34:24,348  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:34:24,379  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:34:24,380  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:34:24,430  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:34:24,430  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:34:24,431  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521]
+12:34:24,431  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:34:24,642  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:35:50,990  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:35:50,995  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:35:51,000  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:35:51,001  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:35:51,001  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:35:51,018  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:35:51,018  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:35:51,060  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:35:51,098  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:35:51,130  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:35:51,131  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:35:51,186  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:35:51,186  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:35:51,186  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:35:51,186  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:35:51,389  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:36:14,821  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:36:14,827  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:36:14,832  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:36:14,832  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:36:14,832  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:36:14,849  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:36:14,849  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:36:14,891  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:36:14,929  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:36:14,960  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:36:14,961  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:36:15,011  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:36:15,012  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:36:15,012  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:36:15,012  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:36:15,218  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:37:35,346  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:37:35,352  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:37:35,356  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:37:35,357  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:37:35,357  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:37:35,373  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:37:35,373  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:37:35,415  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:37:35,459  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:37:35,490  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:37:35,491  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:37:35,541  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:37:35,541  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:37:35,541  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:37:35,541  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:37:35,765  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:37:35,813  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:37:35,816  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:37:36,016 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:53:43,735  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:53:43,743  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:53:43,749  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:53:43,749  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:53:43,750  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:53:43,771  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:53:43,772  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:53:43,827  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:53:43,884  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:53:43,930  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:53:43,932  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:53:44,004  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:53:44,004  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:53:44,005  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:53:44,005  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:53:44,282  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:53:44,349  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:53:44,353  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:53:44,618 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:54:18,946  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:54:18,954  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:54:18,959  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:54:18,960  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:54:18,960  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:54:18,983  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:54:18,983  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:54:19,039  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:54:19,094  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:54:19,140  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:54:19,142  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:54:19,215  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:54:19,216  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:54:19,216  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:54:19,216  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:54:19,511  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:54:19,582  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:54:19,587  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:54:19,895 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:54:37,845  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:54:37,852  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:54:37,858  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:54:37,858  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:54:37,859  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:54:37,881  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:54:37,881  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:54:37,935  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:54:37,986  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:54:38,031  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:54:38,032  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:54:38,101  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:54:38,101  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:54:38,101  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:54:38,102  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:54:38,376  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:54:38,438  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:54:38,442  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:54:38,708 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:54:53,136  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:54:53,143  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:54:53,149  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:54:53,150  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:54:53,150  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:54:53,172  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:54:53,172  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:54:53,231  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:54:53,284  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:54:53,327  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:54:53,328  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:54:53,396  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:54:53,397  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:54:53,397  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:54:53,397  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:54:53,683  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:54:53,748  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:54:53,752  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:56:10,130  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:56:10,138  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:56:10,144  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:56:10,144  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:56:10,144  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:56:10,168  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:56:10,168  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:56:10,221  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:56:10,271  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:56:10,314  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:56:10,316  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:56:10,386  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:56:10,387  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:56:10,387  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:56:10,387  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:56:10,682  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:56:10,751  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:56:10,756  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:57:31,658  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:57:31,666  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:57:31,671  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:57:31,672  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:57:31,672  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:57:31,695  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:57:31,696  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:57:31,753  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:57:31,803  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:57:31,850  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:57:31,852  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:57:31,925  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:57:31,925  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:57:31,926  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:57:31,926  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:57:32,203  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:57:32,263  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:57:32,268  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:57:32,539 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+12:58:12,286  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:58:12,294  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:58:12,300  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:58:12,300  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:58:12,301  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:58:12,323  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:58:12,323  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:58:12,379  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:58:12,430  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:58:12,474  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:58:12,475  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:58:12,545  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:58:12,546  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:58:12,546  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:58:12,546  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:58:12,823  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:58:12,887  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:58:12,892  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+12:58:56,316  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+12:58:56,324  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+12:58:56,331  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+12:58:56,331  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+12:58:56,332  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+12:58:56,356  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+12:58:56,356  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+12:58:56,419  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+12:58:56,471  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+12:58:56,517  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+12:58:56,518  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+12:58:56,595  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+12:58:56,595  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+12:58:56,596  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+12:58:56,596  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+12:58:56,894  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+12:58:56,961  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+12:58:56,965  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:16:13,761  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:16:13,768  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:16:13,777  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:16:13,777  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:16:13,777  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:16:13,811  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:16:13,811  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:16:13,862  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:16:13,925  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:16:13,971  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:16:13,972  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:16:14,023  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:16:14,023  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:16:14,023  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:16:14,023  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:16:14,257  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:16:14,327  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:16:14,332  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:16:14,591 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+21:16:44,934  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:16:44,940  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:16:44,944  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:16:44,945  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:16:44,945  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:16:44,962  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:16:44,962  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:16:45,003  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:16:45,040  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:16:45,072  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:16:45,073  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:16:45,124  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:16:45,124  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:16:45,124  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:16:45,124  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:16:45,345  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:16:45,395  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:16:45,399  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:16:45,599 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+21:17:27,294  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:17:27,299  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:17:27,306  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:17:27,307  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:17:27,307  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:17:27,323  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:17:27,323  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:17:27,364  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:17:27,401  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:17:27,432  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:17:27,433  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:17:27,482  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:17:27,483  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:17:27,483  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:17:27,483  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:17:27,689  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:17:44,263  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:17:44,269  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:17:44,273  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:17:44,274  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:17:44,274  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:17:44,290  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:17:44,290  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:17:44,331  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:17:44,367  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:17:44,401  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:17:44,402  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:17:44,452  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:17:44,452  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:17:44,452  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:17:44,452  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:17:44,660  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:18:20,303  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:18:20,309  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:18:20,313  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:18:20,314  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:18:20,314  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:18:20,330  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:18:20,330  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:18:20,371  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:18:20,409  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:18:20,440  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:18:20,441  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:18:20,490  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:18:20,491  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:18:20,491  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:18:20,491  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:18:20,693  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:18:20,741  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:18:20,744  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:18:20,944 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+21:18:29,845  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:18:29,851  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:18:29,855  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:18:29,856  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:18:29,856  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:18:29,872  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:18:29,872  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:18:29,913  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:18:29,949  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:18:29,980  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:18:29,982  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:18:30,031  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:18:30,031  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:18:30,031  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:18:30,031  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:18:30,252  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:18:30,300  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:18:30,303  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:20:13,372  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:20:13,378  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:20:13,382  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:20:13,382  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:20:13,382  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:20:13,399  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:20:13,399  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:20:13,441  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:20:13,477  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:20:13,510  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:20:13,511  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:20:13,561  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:20:13,561  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:20:13,562  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:20:13,562  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:20:13,765  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:20:13,813  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:20:13,816  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:20:14,015 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+21:20:14,046  WARN SqlExceptionHelper:144 - SQL Error: 17004, SQLState: 99999
+21:20:14,046 ERROR SqlExceptionHelper:146 - Invalid column type: getInt not implemented for class oracle.jdbc.driver.T4CRawAccessor
+21:22:44,645  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:22:44,651  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:22:44,659  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:22:44,659  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:22:44,659  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:22:44,676  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:22:44,676  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:22:44,717  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:22:44,755  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:22:44,786  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:22:44,788  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:22:44,838  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:22:44,838  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:22:44,839  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:22:44,839  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:22:45,042  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:22:45,092  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:22:45,095  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:22:45,298 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+21:22:45,329  WARN SqlExceptionHelper:144 - SQL Error: 17004, SQLState: 99999
+21:22:45,329 ERROR SqlExceptionHelper:146 - Invalid column type: getInt not implemented for class oracle.jdbc.driver.T4CRawAccessor
+21:29:17,345  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:29:17,351  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:29:17,359  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:29:17,359  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:29:17,359  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:29:17,376  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:29:17,376  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:29:17,420  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:29:17,458  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:29:17,489  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:29:17,490  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:29:17,543  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:29:17,543  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:29:17,543  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:29:17,544  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:29:17,757  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:29:17,806  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:29:17,810  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:29:18,008 DEBUG SQL:104 - 
+    select
+        basicormap0_.ROLE_GUID as ROLE_GUI1_0_,
+        basicormap0_.MEMBER_GUID as MEMBER_G2_0_ 
+    from
+        XDB.app_role_membership basicormap0_
+21:29:18,039  WARN SqlExceptionHelper:144 - SQL Error: 17004, SQLState: 99999
+21:29:18,039 ERROR SqlExceptionHelper:146 - Invalid column type: getByte not implemented for class oracle.jdbc.driver.T4CRawAccessor
+21:40:16,295  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:40:16,301  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:40:16,308  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:40:16,309  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:40:16,309  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:40:16,326  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:40:16,326  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:40:16,367  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:40:16,404  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:40:16,435  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:40:16,436  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:40:16,486  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:40:16,486  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:40:16,486  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:40:16,486  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:40:16,692  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:40:58,213  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:40:58,218  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:40:58,223  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:40:58,223  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:40:58,224  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:40:58,240  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:40:58,240  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:40:58,282  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:40:58,321  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:40:58,352  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:40:58,354  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:40:58,404  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:40:58,404  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:40:58,404  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:40:58,404  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:40:58,611  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:40:58,659  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:40:58,663  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+21:40:58,861 DEBUG SQL:104 - 
+    select
+        employee0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employee0_.FIRST_NAME as FIRST_NA2_0_,
+        employee0_.LAST_NAME as LAST_NAM3_0_,
+        employee0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.EMPLOYEES employee0_
+21:59:47,510  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+21:59:47,516  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+21:59:47,523  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+21:59:47,524  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+21:59:47,524  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+21:59:47,541  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+21:59:47,541  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+21:59:47,584  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+21:59:47,621  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+21:59:47,654  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+21:59:47,655  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+21:59:47,705  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+21:59:47,705  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+21:59:47,705  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+21:59:47,705  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+21:59:47,912  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+21:59:47,961  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:59:47,964  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:00:33,484  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:00:33,490  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:00:33,495  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:00:33,495  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:00:33,495  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:00:33,512  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:00:33,512  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:00:33,553  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:00:33,589  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:00:33,621  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:00:33,622  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:00:33,672  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:00:33,672  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:00:33,672  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:00:33,672  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:00:33,876  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:00:33,930  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:00:33,933  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:01:09,576  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:01:09,582  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:01:09,587  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:01:09,587  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:01:09,588  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:01:09,605  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:01:09,605  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:01:09,648  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:01:09,687  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:01:09,720  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:01:09,721  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:01:09,773  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:01:09,773  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:01:09,773  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:01:09,774  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:01:10,000  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:01:10,066  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:01:10,070  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:02:06,814  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:02:06,820  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:02:06,825  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:02:06,825  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:02:06,826  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:02:06,844  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:02:06,844  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:02:06,888  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:02:06,927  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:02:06,961  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:02:06,962  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:02:07,014  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:02:07,015  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:02:07,015  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:02:07,015  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:02:07,227  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:02:07,290  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:02:07,294  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:02:22,574  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:02:22,581  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:02:22,585  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:02:22,586  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:02:22,586  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:02:22,603  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:02:22,603  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:02:22,647  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:02:22,686  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:02:22,722  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:02:22,723  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:02:22,775  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:02:22,775  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:02:22,776  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:02:22,776  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:02:22,992  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:02:23,053  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:02:23,057  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:02:33,449 DEBUG SQL:104 - 
+    select
+        employee0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employee0_.FIRST_NAME as FIRST_NA2_0_,
+        employee0_.LAST_NAME as LAST_NAM3_0_,
+        employee0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.EMPLOYEES employee0_
+22:03:50,520  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:03:50,526  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:03:50,533  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:03:50,534  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:03:50,534  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:03:50,551  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:03:50,551  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:03:50,593  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:03:50,629  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:03:50,669  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:03:50,670  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:03:50,719  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:03:50,720  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:03:50,720  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:03:50,720  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:03:50,925  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:03:50,973  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:03:50,976  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:03:51,175 DEBUG SQL:104 - 
+    select
+        employee0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employee0_.FIRST_NAME as FIRST_NA2_0_,
+        employee0_.LAST_NAME as LAST_NAM3_0_,
+        employee0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.EMPLOYEES employee0_
+22:05:27,417  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:05:27,424  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:05:27,429  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:05:27,429  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:05:27,429  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:05:27,446  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:05:27,446  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:05:27,489  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:05:27,529  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:05:27,559  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:05:27,560  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:05:27,610  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:05:27,610  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:05:27,610  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:05:27,610  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:05:27,816  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:05:27,863  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:05:27,866  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:05:35,078  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:05:35,085  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:05:35,091  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:05:35,091  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:05:35,092  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:05:35,110  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:05:35,111  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:05:35,154  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:05:35,191  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:05:35,221  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:05:35,222  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:05:35,273  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:05:35,273  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:05:35,274  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:05:35,274  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:05:35,480  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:05:35,527  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:05:35,531  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:05:35,728 DEBUG SQL:104 - 
+    select
+        employee0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employee0_.FIRST_NAME as FIRST_NA2_0_,
+        employee0_.LAST_NAME as LAST_NAM3_0_,
+        employee0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.EMPLOYEES employee0_
+22:15:14,962  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:15:14,968  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:15:14,973  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:15:14,974  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:15:14,974  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:15:14,991  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:15:14,991  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:15:15,034  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:15:15,071  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:15:15,103  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:15:15,104  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:15:15,156  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:15:15,156  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:15:15,156  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:15:15,157  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:15:15,368  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:15:15,417  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:15:15,420  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:15:15,621 DEBUG SQL:104 - 
+    select
+        employee0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employee0_.FIRST_NAME as FIRST_NA2_0_,
+        employee0_.LAST_NAME as LAST_NAM3_0_,
+        employee0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.Employee employee0_
+22:15:15,652  WARN SqlExceptionHelper:144 - SQL Error: 942, SQLState: 42000
+22:15:15,652 ERROR SqlExceptionHelper:146 - ORA-00942: table or view does not exist
+
+22:16:50,826  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:16:50,833  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:16:50,838  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:16:50,838  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:16:50,839  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:16:50,856  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:16:50,856  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:16:50,900  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:16:50,938  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:16:50,975  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:16:50,976  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:16:51,026  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:16:51,026  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:16:51,026  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:16:51,026  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:16:51,233  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:16:51,282  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:16:51,285  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:17:07,544  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:17:07,550  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:17:07,554  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:17:07,555  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:17:07,555  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:17:07,576  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:17:07,576  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:17:07,625  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:17:07,666  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:17:07,697  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:17:07,698  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:17:07,750  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:17:07,751  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:17:07,751  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:17:07,751  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:17:07,959  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:17:08,010  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:17:08,013  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:17:08,220 DEBUG SQL:104 - 
+    select
+        employees0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employees0_.FIRST_NAME as FIRST_NA2_0_,
+        employees0_.LAST_NAME as LAST_NAM3_0_,
+        employees0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.Employees employees0_
+22:18:05,397  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:18:05,403  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:18:05,408  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:18:05,409  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:18:05,409  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:18:05,428  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:18:05,428  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:18:05,470  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:18:05,509  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:18:05,543  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:18:05,545  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:18:05,601  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:18:05,601  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:18:05,601  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:18:05,602  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:18:05,817  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:18:05,871  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:18:05,875  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:18:06,083 DEBUG SQL:104 - 
+    select
+        employees0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employees0_.FIRST_NAME as FIRST_NA2_0_,
+        employees0_.LAST_NAME as LAST_NAM3_0_,
+        employees0_.EMAIL as EMAIL4_0_ 
+    from
+        XDB.Employees employees0_
+22:18:06,115  WARN SqlExceptionHelper:144 - SQL Error: 942, SQLState: 42000
+22:18:06,115 ERROR SqlExceptionHelper:146 - ORA-00942: table or view does not exist
+
+22:18:24,304  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:18:24,310  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:18:24,314  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:18:24,315  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:18:24,315  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:18:24,332  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:18:24,332  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:18:24,375  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:18:24,412  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:18:24,445  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:18:24,446  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:18:24,506  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:18:24,506  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:18:24,506  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:18:24,506  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:18:24,714  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:18:24,762  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:18:24,766  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:18:24,968 DEBUG SQL:104 - 
+    select
+        employees0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employees0_.FIRST_NAME as FIRST_NA2_0_,
+        employees0_.LAST_NAME as LAST_NAM3_0_,
+        employees0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.Employees employees0_
+22:42:48,192  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:42:48,207  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:42:48,257  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:42:48,259  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:42:48,259  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:42:48,427  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:42:48,428  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:42:48,563  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:42:48,705  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:42:48,756  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:42:48,757  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:42:48,933  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:42:48,933  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:42:48,934  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:42:48,934  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:42:49,419  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:42:49,697  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:42:49,706  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:42:50,003 DEBUG SQL:104 - 
+    select
+        employees0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employees0_.FIRST_NAME as FIRST_NA2_0_,
+        employees0_.LAST_NAME as LAST_NAM3_0_,
+        employees0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.Employees employees0_ 
+    where
+        employees0_.EMPLOYEE_ID='207'
+22:45:48,696  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:45:48,702  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:45:48,706  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:45:48,707  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:45:48,707  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:45:48,723  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:45:48,724  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:45:48,767  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:45:48,805  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:45:48,837  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:45:48,838  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:45:48,895  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:45:48,895  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:45:48,895  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:45:48,895  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:45:49,116  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:45:49,171  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:45:49,174  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:45:49,386 DEBUG SQL:104 - 
+    select
+        employees0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employees0_.FIRST_NAME as FIRST_NA2_0_,
+        employees0_.LAST_NAME as LAST_NAM3_0_,
+        employees0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.Employees employees0_ 
+    where
+        employees0_.EMPLOYEE_ID='207'
+22:49:31,753  INFO Version:37 - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+22:49:31,759  INFO Version:41 - HHH000412: Hibernate Core {4.2.21.Final}
+22:49:31,765  INFO Environment:223 - HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.max_fetch_depth=1, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.jdbc.use_streams_for_binary=true, hibernate.format_sql=true, hibernate.cache.region.factory_class=org.hibernate.cache.internal.NoCachingRegionFactory, hibernate.query.substitutions=yes 'Y', no 'N', hibernate.proxool.pool_alias=pool1, hibernate.connection.username=hr, hibernate.cache.region_prefix=hibernate.test, hibernate.connection.url=jdbc:oracle:thin:@localhost:1521:xe, hibernate.bytecode.use_reflection_optimizer=false, hibernate.connection.password=****, hibernate.jdbc.batch_versioned_data=true, hibernate.connection.pool_size=1}
+22:49:31,766  INFO Environment:256 - HHH000407: Using java.io streams to persist binary types
+22:49:31,766  INFO Environment:345 - HHH000021: Bytecode provider name : javassist
+22:49:31,785  INFO Configuration:2015 - HHH000043: Configuring from resource: com/basic/ormaping/hibernate.cfg.xml
+22:49:31,786  INFO Configuration:2034 - HHH000040: Configuration resource: com/basic/ormaping/hibernate.cfg.xml
+22:49:31,828  INFO Configuration:730 - HHH000221: Reading mappings from resource: com/basic/ormaping/basicormapping.hbm.xml
+22:49:31,870  INFO Configuration:2156 - HHH000041: Configured SessionFactory: null
+22:49:31,901  WARN ConnectionProviderInitiator:222 - HHH000209: proxool properties were encountered, but the org.hibernate.service.jdbc.connections.internal.ProxoolConnectionProvider provider class was not found on the classpath; these properties are going to be ignored.
+22:49:31,902  WARN DriverManagerConnectionProviderImpl:98 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+22:49:31,953  INFO DriverManagerConnectionProviderImpl:134 - HHH000115: Hibernate connection pool size: 1
+22:49:31,954  INFO DriverManagerConnectionProviderImpl:137 - HHH000006: Autocommit mode: false
+22:49:31,954  INFO DriverManagerConnectionProviderImpl:151 - HHH000401: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+22:49:31,954  INFO DriverManagerConnectionProviderImpl:156 - HHH000046: Connection properties: {user=system, password=****}
+22:49:32,165  INFO Dialect:130 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+22:49:32,214  INFO TransactionFactoryInitiator:68 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+22:49:32,218  INFO ASTQueryTranslatorFactory:48 - HHH000397: Using ASTQueryTranslatorFactory
+22:49:32,427 DEBUG SQL:104 - 
+    select
+        employees0_.EMPLOYEE_ID as EMPLOYEE1_0_,
+        employees0_.FIRST_NAME as FIRST_NA2_0_,
+        employees0_.LAST_NAME as LAST_NAM3_0_,
+        employees0_.EMAIL as EMAIL4_0_ 
+    from
+        HR.Employees employees0_ 
+    where
+        employees0_.EMPLOYEE_ID='207'

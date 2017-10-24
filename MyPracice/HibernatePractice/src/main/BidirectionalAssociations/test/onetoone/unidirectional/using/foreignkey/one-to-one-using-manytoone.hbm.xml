@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+
+<class name="test.onetoone.unidirectional.using.foreignkey.Person" dynamic-insert="true" dynamic-update="true" table="PERSON_TABLE">
+
+
+<id name="personID" type="integer" access="property" column="PERSON_ID">
+
+<generator class="increment"/>
+
+</id>
+
+<property name="personName" type="string" column="PERSON_NAME"/>
+
+
+<!-- changing many-to-one to one-to-one mapping using not-null=true and unique=true -->
+<many-to-one name="address" class="test.onetoone.unidirectional.using.foreignkey.Address" not-null="true" unique="true" column="ADDRESS_ID" cascade="save-update"></many-to-one>
+
+
+
+</class>
+
+
+</hibernate-mapping>        

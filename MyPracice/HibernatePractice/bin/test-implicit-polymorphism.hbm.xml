@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.test.tableperclass">
+
+
+    
+    <class name="Payment" dynamic-insert="true"
+		dynamic-update="true" lazy="true"  table="PAYMENT_DETAILS" polymorphism="implicit">
+
+		<id access="property" column="PAYMENT_DETAILS_ID" type="integer"
+			name="paymentDetailsId">
+
+			<generator class="increment" />
+
+		</id>
+		
+		<any name="paymentDetails" id-type="integer" meta-type="string" access="property" cascade="save-update">
+		
+		<meta-value class="CreditCardPayment" value="CREDIT"/>
+		<meta-value class="CashPayment" value="CASH"/>
+		<meta-value class="ChequePayment" value="CHEQUE"/>
+		<column name="PAYMENT_TYPE" />
+		<column name="ASSOCIATED_CLASS_ID"/>
+	    </any>
+	    
+	    <property name="amount" type="big_decimal" />
+		
+	</class>
+    
+    
+    
+
+	<class name="CreditCardPayment" dynamic-insert="true"
+		dynamic-update="true" lazy="false"  table="CREDIT_CARD_PAYMENT" polymorphism="implicit">
+
+		<id access="property" column="PAYMENT_DETAILS_ID" type="integer"
+			name="paymentDetailsId">
+
+			<generator class="increment" />
+
+		</id>
+		<property name="creditCardType" type="string" column="CC_TYPE"
+			not-null="false" />
+		<property name="amount" type="big_decimal" />
+	</class>
+
+
+	<class name="CashPayment" dynamic-insert="true" dynamic-update="true"
+		lazy="false" table="CASH_PAYMENT">
+
+		<id access="property" column="PAYMENT_DETAILS_ID" type="integer"
+			name="paymentDetailsId">
+
+			<generator class="increment" />
+
+		</id>
+		
+		<property name="amount" type="big_decimal" />
+		
+	</class>
+
+
+
+	<class name="ChequePayment" dynamic-insert="true" dynamic-update="true"
+		lazy="false"  table="CHEQUE_PAYMENT">
+
+		<id access="property" column="PAYMENT_DETAILS_ID" type="integer"
+			name="paymentDetailsId">
+
+			<generator class="increment" />
+
+		</id>
+   <property name="amount" type="big_decimal" />
+   
+  </class>
+
+
+
+</hibernate-mapping>        

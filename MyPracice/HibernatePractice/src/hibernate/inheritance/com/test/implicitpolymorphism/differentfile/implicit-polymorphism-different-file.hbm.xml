@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping package="com.test.tableperclass">
+
+    
+    <subclass extends="Payment" name="CreditCardPayment" >
+    
+    <property name="creditCardType" type="string" column="CC_TYPE"
+			not-null="false" />
+
+    </subclass>
+    
+    <joined-subclass extends="Payment" name="ChequePayment" table="CHEQUE_PAYMENT" >
+    
+    
+      <key column="CHEQUE_PAYMENT_ID"/>
+    
+    </joined-subclass>
+    
+    <union-subclass name="CashPayment" extends="Payment" table="CASH_PAYMENT">
+    <property name="type" access="property" column="TYPE"></property>
+    </union-subclass>
+
+<class>
+<set name="" >
+
+<one-to-many >
+
+</one-to-many>
+
+
+</set>
+</class>
+</hibernate-mapping>        

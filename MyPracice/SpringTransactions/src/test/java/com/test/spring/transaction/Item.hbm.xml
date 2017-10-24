@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+
+<class name="com.test.spring.transaction.Item" table="Item">
+
+<id name="itemId" type="integer" column="ITEM_ID">
+   <generator class="sequence">
+   <param name="sequence">EMPLOYEES_SEQ</param>
+   </generator>
+</id>
+
+<property name="itemName" column="ITEM_NAME"/>
+<property name="itemPrice" column="ITEM_PRICE"/>
+</class>
+
+</hibernate-mapping>        

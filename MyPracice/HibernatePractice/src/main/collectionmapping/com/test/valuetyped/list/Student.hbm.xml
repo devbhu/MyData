@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+<hibernate-mapping package="com.test.valuetyped.list">
+
+
+<class name="Student">
+
+<id name="studentID" type="integer">
+<generator class="native"></generator>
+</id>
+
+<property name="studentName"></property>
+
+<list name="books" access="property" table="BOOKS_TABLE" >
+
+<key column="STU_ID" foreign-key="student_fk"/>
+
+<list-index base="2" column="BOOK_INDEX"></list-index>
+
+<element column="BOOK_NAME" type="string" not-null="true"/>
+</list>
+
+<bag name="activities" access="property" table="ACTIVITY_TABLE" inverse="true" >
+
+<key column="STU_ID" />
+
+<composite-element class="Activity" >
+
+<property name="activityName" column="ACTIVITY_NAME" type="string"/>
+<property name="practiceHours" column="PRACTICE_HOURS" type="integer"/>
+</composite-element>
+
+</bag>
+
+
+</class>
+
+
+</hibernate-mapping>        

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.hibernate.mapping.models">
+
+<class name="Countries" table="COUNTRY_TABLE" dynamic-insert="true" dynamic-update="true" lazy="true">
+
+<id access="property" name="countryId" column="COUNTRY_ID" type="string"/>
+
+<property name="countryName"  column="COUNTRY_NAME" access="property" ></property>
+
+<many-to-one name="region" class="Region" access="property" column="REG_ID" lazy="proxy" foreign-key="region_fk" cascade="save-update"></many-to-one>
+
+</class>
+
+
+</hibernate-mapping>        

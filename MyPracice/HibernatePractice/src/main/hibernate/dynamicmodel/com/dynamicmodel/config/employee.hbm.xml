@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class  table="EMPLOYEES" entity-name="EmployeesModel"> 
+        <id name="id"  type="long" column="EMPLOYEE_ID">
+            <generator class="sequence">
+            <param name="sequence">EMPLOYEES_SEQ</param>
+            </generator>
+        </id>
+   <property name="employeeFirstName"  type="string" insert="true" update="true" column="FIRST_NAME"/>
+      <property name="employeeLastName"  type="string"  insert="true" update="true" column="LAST_NAME"/>
+   <property name="employeeEmail"  type="string" insert="true" update="true" column="EMAIL"/>
+    <property name="departmentID"   type="long" insert="true" update="true" column="DEPARTMENT_ID"></property>
+     <property name="salary"  type="long"  insert="true" update="true" column="SALARY"/>
+     <property name="hireDate"  type="date" insert="true" update="true" column="HIRE_DATE"></property>
+     <property name="jobID"  type="string" insert="true" update="true" column="JOB_ID" lazy="true" />
+  
+     
+     </class>
+
+</hibernate-mapping>
+

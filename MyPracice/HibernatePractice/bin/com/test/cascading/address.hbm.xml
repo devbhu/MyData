@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping package="com.test.cascading">
+
+
+<class name="Address" dynamic-insert="true" dynamic-update="true">
+
+<id access="property" column="address_id" name="addressId">
+
+<generator class="increment"></generator>
+</id>
+
+
+<property name="residentCity" column="resident_city" ></property>
+<property name="residentState" column="resident_state" ></property>
+<property name="residentCountry" column="resident_country" ></property>
+<property name="addressUserId" column="address_user_id" ></property>
+<one-to-one name="userDetails" class="UsrDetails" foreign-key="address_user_id" cascade="all"/>
+
+</class>
+
+
+
+</hibernate-mapping>        

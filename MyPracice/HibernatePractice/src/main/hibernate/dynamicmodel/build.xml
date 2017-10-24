@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Jan 24, 2017 11:55:16 PM                                                        
+
+     project    
+     description
+                   
+     ASanyal                                                                
+     ====================================================================== -->
+<project name="HibernatePractice" >
+    <description>
+            description
+    </description>
+	
+	<property name="jar.path">
+		
+		<classpath  path="C:\Users\asanyal\Downloads\compressed\hibernate-release-4.2.21.Final\hibernate-release-4.2.21.Final\lib\required">
+		
+		<fileset includes="*.jar" ></fileset>
+		</classpath>
+	
+	</property>
+	
+	<property name="classes.dir">
+			
+			<classpath path="C:\Practice\hibernate\HibernatePractice\bin">
+			
+			<fileset includes="*.class" ></fileset>
+			</classpath>
+		
+	</property>
+
+	<target name="instrument" >
+	<taskdef name="instrument1" classname="org.hibernate.tool.instrument.InstrumentTask" classpath="C:\Users\asanyal\Downloads\compressed\hibernate-release-4.2.21.Final\hibernate-release-4.2.21.Final\lib\required">
+	
+		<classpath path="${jar.path}"/>
+	
+		<classpath path="${classes.dir}"/>
+
+
+	</taskdef>
+	<instrument verbose="true">
+	<fileset dir="C:\Practice\hibernate\HibernatePractice\bin">
+	<include name="*.class"/>
+	</fileset>
+	</instrument>
+	</target>
+
+</project>
+
+

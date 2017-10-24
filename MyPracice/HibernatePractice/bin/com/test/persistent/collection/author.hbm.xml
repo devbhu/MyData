@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="true" package="com.test.persistent.collection">
+
+<class name="Author" table="AUTHOR" dynamic-insert="true" dynamic-update="true" >
+
+<id name="authorId" access="property" column="AUTHOR_ID" type="integer">
+
+<generator class="increment"/>
+</id>
+
+<property name="authorName" column="AUTHOR_NAME"  type="string" not-null="true" access="property" insert="true" update="false"/>
+
+<set name="books" access="property" table="BOOKS" cascade="all" inverse="false">
+
+<key column="AUTH_ID" not-null="true" foreign-key="author_fk"></key>
+<one-to-many class="Books"/>
+</set>
+
+
+
+</class>
+
+
+
+</hibernate-mapping>        

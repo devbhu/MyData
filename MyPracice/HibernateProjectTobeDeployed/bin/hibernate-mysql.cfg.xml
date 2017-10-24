@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+
+	<!-- for my sql configuration start -->
+	
+	<session-factory>
+	 
+	       <property name="hibernate.session_factory_name">java:/hibernateMysql/MySessionFactory</property>
+	       <property name="hibernate.connection.datasource">java:jboss/sampleMysqlDS</property>
+          <property name="show_sql">true</property>
+          <property name="hibernate.hbm2ddl.auto">update</property>  
+          <property name="hibernate.use_identifier_rollback">true</property> 
+          <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+       <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JTATransactionFactory</property>
+          <property name="hibernate.transaction.manager_lookup_class">org.hibernate.transaction.JBossTransactionManagerLookup</property>
+          <property name="hibernate.current_session_context_class">jta</property>
+           
+          
+		<!-- List of XML mapping files -->
+<!-- 		
+		<mapping resource="com/test/hibernate/resources/regions.hbm.xml" />
+	   <mapping resource="com/test/hibernate/resources/countries.hbm.xml" /> -->
+	   <!--
+	   <mapping resource="com/test/valuetypedobjects/userdetails.hbm.xml"/>
+	    <mapping resource="com/test/cascading/userdetails.hbm.xml"/>
+	     <mapping resource="com/test/cascading/address.hbm.xml"/>
+	     <mapping resource="com/test/fetch/fetchRegions.hbm.xml"/>
+	      <mapping resource="com/test/fetch/fetchStrategies.hbm.xml"/> -->
+	      
+	     <!--  <mapping resource="com/test/mapping/onetoone/addresses.hbm.xml"/>
+	        <mapping resource="com/test/mapping/onetoone/userDetails.hbm.xml"/>  -->
+	        
+	       <!--  <mapping resource="com/test/mapping/onetoone/userDetails_natural_key_test.hbm.xml"/> -->
+	       
+	     <!--   <mapping resource="table-per-subclass.hbm.xml"/> --> 
+	<!--      <mapping resource="table-per-subclass-discriminator.hbm.xml"/> -->
+	<!-- <mapping resource="Person-Address-using-join.hbm.xml"/> -->
+	
+	<!-- <mapping resource="table-per-concrete-class.hbm.xml"/> -->
+	    <!--  <mapping resource="com/test/implicitpolymorphism/differentfile/Implicit-parent-different.hbm.xml"/>
+	     <mapping resource="com/test/implicitpolymorphism/differentfile/implicit-polymorphism-different-file.hbm.xml"/> -->
+
+<!--     <mapping resource="com/test/onetomany/Employee.hbm.xml"/>
+    <mapping resource="com/test/onetomany/Address.hbm.xml"/> -->
+    
+   <!--  <mapping resource="com/test/mapping/manytomany/Course.hbm.xml"/>
+    <mapping resource="com/test/mapping/manytomany/Student.hbm.xml"/> -->
+    <!-- 
+    <mapping resource="test/manytoone/bidirectional/book.hbm.xml"/>
+    
+    <mapping resource="test/manytoone/bidirectional/author.hbm.xml"/> -->
+   <!--  <mapping resource="test/onetoone/bidirectional/person.hbm.xml"/> -->
+   <!--  <mapping resource="test/onetoone/unidirectional/using/foreignkey/address.hbm.xml"/>
+    <mapping  resource="test/onetoone/unidirectional/using/foreignkey/one-to-one-using-manytoone.hbm.xml"/> -->
+    <!-- <mapping resource="com/test/persistent/collection/author.hbm.xml"/>
+    <mapping resource="com/test/persistent/collection/book.hbm.xml"/> -->
+    <!-- <mapping resource="test/collectionmapping/map/Question.hbm.xml"/> -->
+  <!--   <mapping resource="com/test/onetomany/using/map/bidirectional/author.hbm.xml"/>
+      <mapping resource="com/test/onetomany/using/map/bidirectional/book.hbm.xml"/> -->
+    
+ <!--    <mapping resource="com/test/manytomany/using/list/Course.hbm.xml"/>
+     <mapping resource="com/test/manytomany/using/list/Student.hbm.xml"/> -->
+     
+  <!--    <mapping resource="com/test/valuetyped/list/Student.hbm.xml"/> -->
+  
+<!--   <mapping resource="com/test/bidirectional/inverse/author.hbm.xml"/>
+    <mapping resource="com/test/bidirectional/inverse/book.hbm.xml"/> -->
+<!--     <mapping resource="com/test/bidirectional/inverse/manytomany/Student.hbm.xml"/>
+    <mapping resource="com/test/bidirectional/inverse/manytomany/Course.hbm.xml"/> -->
+    
+   <!--  <mapping resource="com/test/inverse/valuetyped/author.hbm.xml"/> -->
+<!--    <mapping resource="com/test/inverse/using/indexed/collections/Question.hbm.xml"/>
+    <mapping resource="com/test/inverse/using/indexed/collections/Answer.hbm.xml"/> -->
+ <!--     <mapping resource="com/test/valuetypedobjects/userdetails.hbm.xml"/> -->
+ 
+     <mapping resource="com/test/workingwithobjects/author.hbm.xml"/>
+     <mapping resource="com/test/workingwithobjects/book.hbm.xml"/>
+    
+</session-factory>
+	
+	<!-- for my sql configuration end -->
+
+</hibernate-configuration>
+	

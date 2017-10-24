@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+ <hibernate-mapping package="com.test.basicormapping.model">
+ 
+ 
+ <class   name="EmployeeDepartmentView"  subselect="select emp.EMPLOYEE_ID,dep.DEPARTMENT_NAME,emp.first_name from departments dep, employees emp where emp.employee_id=dep.manager_id
+  " where="EMPLOYEE_ID='204'">
+ 
+  <id name="employeeId" column="EMPLOYEE_ID" >
+    
+  </id>
+  
+  <property name="departmentName" column="DEPARTMENT_NAME"/>
+  
+  <property name="employeeName" column="FIRST_NAME"/>
+  
+  
+   
+ </class>
+   
+
+ </hibernate-mapping>       

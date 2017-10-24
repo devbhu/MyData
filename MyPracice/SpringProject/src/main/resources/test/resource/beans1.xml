@@ -1,0 +1,45 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd" default-autowire-candidates="pojo1">
+ 
+
+
+<!-- <bean id="com.test.pojos.TestBeanPojo3" class="com.test.pojos.TestBeanPojo3">
+<property name="name" value="arindam"></property>
+<property name="age" value="30"></property>
+<property name="rollNo" value="12442"></property>
+</bean> 
+
+<bean id="testBeanId"  class="com.test.pojos.TestBeanPojo2" />
+
+<bean class="com.test.beanpostprocessor.TestBeanPostProcessor1"/>
+
+<bean class="com.test.beanpostprocessor.TestBeanPostProcessor3"/>
+
+ 
+<bean id="nestedClass" class="com.test.pojos.TestBeanPojo3$NestedBean">
+ <property name="nestedBean" value="nested"/>
+ </bean> 
+ 
+  <bean id="inner" factory-bean="com.test.pojos.TestBeanPojo3" factory-method="createInnerInstance">
+ <property name="nestedBean" value="nested" />
+ <constructor-arg />
+ </bean> -->
+ 
+<!--  <bean id="testNameCons" c:_0="papu" c:_1="67" factory-method="createInstance" factory-bean="testInstance">
+  
+ 
+ </bean> -->
+ 
+ 
+ <bean id="testInstance" class="com.test.pojos.TestBeanPojo1" autowire="byType" />
+ 
+  <bean id="pojo1" class="com.test.pojos.TestBeanPojo" autowire-candidate="false"/>
+ 
+ 
+ 
+</beans> 
+
