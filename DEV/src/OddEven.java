@@ -1,3 +1,4 @@
+/*
 class EvenRunnable implements Runnable
 {
 	private int number = 2;
@@ -82,4 +83,4 @@ class OddEven
 		
 		
 	}
-}
+}*/
