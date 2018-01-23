@@ -1,4 +1,4 @@
-package java.concept;
+package java8.concept;
 
 public class DeadlockDemo {
 	   public static Object Lock1 = new Object();

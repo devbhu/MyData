@@ -55,6 +55,7 @@ public class AlivePesson
 			
 			
 		}
+		return 5;
 		
 	}
 	public static void main(String arg[])

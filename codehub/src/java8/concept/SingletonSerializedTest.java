@@ -1,15 +1,6 @@
-package java.concept;
+package java8.concept;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
-
-import java.io.Serializable;
+import java.io.*;
 
 class SerializedSingleton implements Serializable{
 
@@ -20,7 +11,7 @@ class SerializedSingleton implements Serializable{
    /* private static class SingletonHelper{
         private static final SerializedSingleton instance = new SerializedSingleton();
     }*/
-    private static  SerializedSingleton instance =null;
+    private static SerializedSingleton instance =null;
    // private static final SerializedSingleton instance = new SerializedSingleton();
    /* public static SerializedSingleton getInstance(){
         return instance;

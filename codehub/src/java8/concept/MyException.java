@@ -1,4 +1,4 @@
-package java.concept;
+package java8.concept;
 
 
 class CustomException extends RuntimeException{
@@ -6,6 +6,7 @@ class CustomException extends RuntimeException{
 		super(s);
 	}
 }
+
 public class MyException
 {
 

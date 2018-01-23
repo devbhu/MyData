@@ -1,4 +1,4 @@
-package java.lang;
+package java8.lang;
 
 import java.util.Scanner;
 
