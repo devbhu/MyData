@@ -1,4 +1,5 @@
-import java.lang.String;
+package miscellaneous.questions;
+
 public class OSKTest
 {
 
@@ -39,13 +40,13 @@ public class OSKTest
 		} else
 			res = str;
 
-		if (res.contains("?") && (res.contains("\"") || res.contains(",")))
-			res = res.replaceAll("?", "??");
-		else if (!res.contains("?")
+		if (res.contains("�") && (res.contains("\"") || res.contains(",")))
+			res = res.replaceAll("�", "��");
+		else if (!res.contains("�")
 				|| (!res.contains("\"") || !res.contains(",")))
 			res = res;
 		else
-			res = "\"" + res.replaceAll("?", "??") + "\"";
+			res = "\"" + res.replaceAll("�", "��") + "\"";
 		return res;
 
 	}
@@ -57,8 +58,8 @@ public class OSKTest
 		String s = "dev";
 		String res = null;
 		// System.out.println(res);
-		if (s.contains("?"))
-			res = "\"" + s.replaceAll("?", "\"\"") + "\"";
+		if (s.contains("�"))
+			res = "\"" + s.replaceAll("�", "\"\"") + "\"";
 
 		// System.out.println(res);
 		System.out.println(ot.printString(s));
