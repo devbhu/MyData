@@ -1,6 +1,8 @@
 package dynamicprogramming;
 
 
+import java.util.Stack;
+
 public class MaxHistogramArea {
 
     public int maxHistogram(int input[]){
