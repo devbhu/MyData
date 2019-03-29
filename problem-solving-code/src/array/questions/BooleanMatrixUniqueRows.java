@@ -31,7 +31,7 @@ public class BooleanMatrixUniqueRows
 
 	}
 
-	// using Trie Data Structure
+	// using TrieDS Data Structure
 
 	public static void main(String[] args)
 	{
