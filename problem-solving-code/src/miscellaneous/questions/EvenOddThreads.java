@@ -1,7 +1,5 @@
 package miscellaneous.questions;
 
-import org.omg.CORBA.Current;
-
 public class EvenOddThreads {
 
 	public static void main(String[] args) {

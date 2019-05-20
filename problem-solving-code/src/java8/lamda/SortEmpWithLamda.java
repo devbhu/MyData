@@ -1,6 +1,5 @@
 package java8.lamda;
 
-import com.sun.corba.se.spi.logging.LogWrapperFactory;
 
 import java.util.ArrayList;
 import java.util.Collections;
