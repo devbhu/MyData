@@ -54,16 +54,13 @@ public class CheckPerfectSquare
 			}
 
 		}
-		if (flag)
-			return flag;
-		else
-			return flag;
+		return flag;
 
 	}
 
 	public static void main(String[] args)
 	{
-		int n = 625;
+		int n = 25;
        System.out.println(findSqrt(144));
 		System.out.println(n+" is  perfect square ? " + isPerfect(n));
 

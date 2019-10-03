@@ -25,7 +25,7 @@ class LeftViewOfTree
         // Base Case
         if (node==null) return;
  
-        // If this is the first node of its level
+        // If this is the node node of its level
         if (max_level < level)
         {
             System.out.print(" " + node.data);
