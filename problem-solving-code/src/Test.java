@@ -37,11 +37,21 @@ class P<u, v>{
 }
 public class Test {
     public static void main(String a[]){
-        List<P<Integer, String>> list = new ArrayList<>();
-        list.add(P.of(1,"Devmani"));
-        list.add(P.of(2,"Sonu"));
-        System.out.println(list.get(0).first+", "+list.get(0).last);
-        System.out.println(list.get(1).first+", "+list.get(1).last);
+      /* List<String> stringList = new ArrayList<>();
+       stringList.add("");
+       stringList.add("sonu");
+        System.out.println(stringList.get(0).isEmpty());*/
+        try{
+            List l =new ArrayList();
+            System.out.println(10/0);
+        }
+        catch (ArithmeticException ae){
+            ae.printStackTrace();
+        }
+        finally {
+            System.out.println("finally");
+        }
+        System.out.println("outer");
        /* String time = "13:10";
 
         DateFormat sdf = new SimpleDateFormat("HH:mm"); // or "hh:mm" for 12 hour format

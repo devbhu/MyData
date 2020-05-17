@@ -3,7 +3,7 @@ package dp.singleton;
 import java.util.Objects;
 
 public class Logger {
-    public static volatile Logger logger;
+    private static volatile Logger logger;
 
     public static Logger getInstance() {
         if (Objects.isNull(logger)) {

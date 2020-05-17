@@ -1,6 +1,7 @@
 package tree.questions;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 class Trie {
@@ -40,7 +41,7 @@ class Trie {
     /**
      * Recursive implementation of insert into trie
      */
-   /* public void insertRecursive(String word) {
+    public void insertRecursive(String word) {
         insertRecursive(root, word, 0);
     }
 
@@ -60,7 +61,7 @@ class Trie {
             current.children.put(ch, node);
         }
         insertRecursive(node, word, index + 1);
-    }*/
+    }
 
     /**
      * Iterative implementation of search into trie.
@@ -69,7 +70,7 @@ class Trie {
         TrieNode current = root;
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
-            System.out.print(ch+"  ");
+           // System.out.print(ch+"  ");
             TrieNode node = current.children.get(ch);
             //if node does not exist for given char then return false
             if (node == null) {
@@ -85,7 +86,7 @@ class Trie {
     /**
      * Recursive implementation of search into trie.
      */
-   /* public boolean searchRecursive(String word) {
+    public boolean searchRecursive(String word) {
         return searchRecursive(root, word, 0);
     }
     private boolean searchRecursive(TrieNode current, String word, int index) {
@@ -100,7 +101,7 @@ class Trie {
             return false;
         }
         return searchRecursive(node, word, index + 1);
-    }*/
+    }
 
     /**
      * Delete word from trie.
@@ -137,6 +138,19 @@ class Trie {
         }
         return false;
     }
+
+    public void trieTraversal(String list[]){
+        for(int i = 0;i<list.length;i++){
+            TrieNode current = root;
+            String word = list[i];
+            for(int j = 0;j<word.length();j++){
+                char c = word.charAt(j);
+                System.out.print(c);
+                current= current.children.get(c);
+            }
+            System.out.println();
+        }
+    }
 }
 
 public class TrieDataStructure {
@@ -156,7 +170,18 @@ public class TrieDataStructure {
 			System.out.println(t.search(s1));
 		}
 		System.out.println(t.search("ab"));
+        System.out.println("**********recursive********");
+        for(String s1 : s){
+            t.insertRecursive(s1);
+        }
+
+        for(String s1 : s){
+            System.out.println(t.searchRecursive(s1));
+        }
+        System.out.println(t.searchRecursive("ab"));
+        System.out.println("**********trie traversal********");
+        t.trieTraversal(s);
 	}
-	
+
 
 }
