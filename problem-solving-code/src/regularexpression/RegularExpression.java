@@ -1,9 +1,6 @@
 package regularexpression;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -73,6 +70,23 @@ class MobileNo {
     }
 }
 
+class TXTFile{
+    void printTextFileName(){
+        File file = new File("C:\\Users\\devsingh3\\project\\MyData\\problem-solving-code\\src\\regularexpression");
+        String a[] = file.list();
+        Pattern pattern = Pattern.compile("[a-zA-Z0-9][a-zA-Z0-9_$]*[.]txt");
+        int count =0;
+        for (String s : a){
+            Matcher matcher= pattern.matcher(s);
+            if(matcher.find() && matcher.group().equals(s)){
+                System.out.println(s);
+                count++;
+            }
+
+        }
+        System.out.println("total text file"+count);
+    }
+}
 public class RegularExpression {
     public static void main(String a[]) {
         MobileNo mobileNo = new MobileNo(Pattern.compile("(0|91)?[7-9][0-9]{9}"), "918553934533");
@@ -93,5 +107,7 @@ public class RegularExpression {
         emailId2.checkEmailId();
         ExtractMobNo extractMobNo= new ExtractMobNo();
         extractMobNo.extract();
+        TXTFile txtFile=new TXTFile();
+        txtFile.printTextFileName();
     }
 }
