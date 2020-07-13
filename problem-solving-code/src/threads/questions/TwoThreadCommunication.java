@@ -12,6 +12,7 @@ public class TwoThreadCommunication
 	for(int i=97 ; i<123; i++){
 	list.add((char)i);
 	}
+
 	//System.out.println(list);
 		Thread t1= new Thread(new thread1(list));
 		Thread t2= new Thread(new thread2(list));
