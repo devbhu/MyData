@@ -1,6 +1,10 @@
 package oops.concept;
 
 
+import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.stream.Collectors;
+
 class Age {
     private int day;
     private int month;
@@ -61,26 +65,47 @@ final class ImmutableStudent {
 
 public class TestAB {
 
-    public static void main(String args[]) {
-        Age age = new Age();
-        age.setDay(1);
-        age.setMonth(1);
-        age.setYear(1992);
-        ImmutableStudent student = new ImmutableStudent(1, "Alex", age);
-        System.out.println("Alex age year before modification = " + student.getAge().getYear());
-        age.setYear(1993);
-        System.out.println("Alex age year after modification = " + student.getAge().getYear());
-        String as = "devmani singh";
-        int k = 0;
-        while (true) {
-            try {
-                System.out.print(as.charAt(k++));
-            } catch (Exception e) {
-                System.out.println();
-                System.out.println("end of string");
-                break;
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = s.substring(0, 3);
+        String largest = s.substring(0, 3);
+
+        // Complete the function
+        // 'smallest' must be the lexicographically smallest substring of length 'k'
+        // 'largest' must be the lexicographically largest substring of length 'k'
+
+        int i = 0;
+        int j = k;
+        while (i < (s.length() - k + 1)) {
+            String t = s.substring(i, j);
+            if (smallest.compareTo(t) > 0) {
+                smallest = t;
             }
+            if (largest.compareTo(t) < 0) {
+                largest = t;
+            }
+
+            i++;
+            j = i + k;
         }
+
+        return smallest + "\n" + largest;
+    }
+
+    public static void main(String args[]) {
+        final Map<Integer, Integer> wordCounts = new HashMap<>();
+        wordCounts.put(3, 100);
+        wordCounts.put(1, 200);
+        wordCounts.put(10, 50);
+        wordCounts.put(14, 70);
+        wordCounts.put(4, 200);
+
+        final Set<Integer> sortedByCount = wordCounts.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new))
+                .keySet();
+
+        System.out.println(sortedByCount);
     }
 }
 
