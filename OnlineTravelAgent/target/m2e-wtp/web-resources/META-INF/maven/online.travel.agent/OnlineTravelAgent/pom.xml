@@ -93,7 +93,7 @@
     </dependencies>
     
     <properties>
-    <org.springframework-version>4.3.0.RELEASE</org.springframework-version>
+    <org.springframework-version>5.2.20.RELEASE</org.springframework-version>
         <jersey.version>2.16</jersey.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
